@@ -1,6 +1,6 @@
 class findMaximum {
     static int findMaximum1(int array[], int start, int end) {
-        // Practise Yourself : Write your code Here
+
         if (start == end) {
             return array[start];
         }
