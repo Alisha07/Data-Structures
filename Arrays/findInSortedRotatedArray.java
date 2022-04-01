@@ -1,4 +1,4 @@
-class Main {
+public class findInSortedRotatedArray {
     static int findNumber(int array[], int start, int end, int value) {
         int mid = start + ((end - start) / 2);
         if (array[mid] == value) {
