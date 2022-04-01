@@ -1,5 +1,5 @@
-class Main {
-    static int findMaximum(int array[], int start, int end) {
+class findMaximum {
+    static int findMaximum1(int array[], int start, int end) {
         // Practise Yourself : Write your code Here
         if (start == end) {
             return array[start];
@@ -15,9 +15,9 @@ class Main {
         }
 
         else if (array[mid] > array[mid - 1] && array[mid] < array[mid + 1]) {
-            return findMaximum(array, mid + 1, end);
+            return findMaximum1(array, mid + 1, end);
         } else {
-            return findMaximum(array, start, mid - 1);
+            return findMaximum1(array, start, mid - 1);
 
         }
     }
@@ -25,6 +25,6 @@ class Main {
     public static void main(String[] args) {
         int array[] = { 3, 5, 15, 50, 11, 10, 8, 6 };
         int n = array.length;
-        System.out.println("The maximum Value " + findMaximum(array, 0, n - 1));
+        System.out.println("The maximum Value " + findMaximum1(array, 0, n - 1));
     }
 }
