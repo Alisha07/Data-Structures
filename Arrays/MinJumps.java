@@ -4,6 +4,10 @@ public class MinJumps {
         int a = num[0];
         int b = num[0];
         int jump = 1;
+
+        if (num.length == 1) {
+            return 0;
+        }
         if (a == 0) {
             return -1;
         }
@@ -18,8 +22,9 @@ public class MinJumps {
                 b = num[i];
             }
 
-            if (num[i] == 0) {
-                return -1;
+            if (b == 0 && num[i] == 0) {
+                jump = -1;
+                return jump;
             }
 
             if (a == 0) {
