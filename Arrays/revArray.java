@@ -4,7 +4,7 @@ public class revArray {
     public static void main(String[] args) {
         try (Scanner s = new Scanner(System.in)) {
             int t = s.nextInt();
-            while (t != 0) {
+            while (t != 0) { // t is no. of test cases
                 int n = s.nextInt();
                 int arr[] = new int[n];
                 for (int i = 0; i < n; i++) {
