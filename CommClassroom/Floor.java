@@ -9,7 +9,7 @@ public class Floor {
         int start = 0;
         int end = arr.length - 1;
         // binary(arr, target, start, end);
-        if (target > arr[end]) {
+        if (target < arr[start]) {
             return -1;
         }
         while (start <= end) {
