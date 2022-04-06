@@ -18,6 +18,7 @@ public class nextGreatest {
             }
 
         }
+        // letters wrap around
         return letters[start % letters.length];
 
     }
